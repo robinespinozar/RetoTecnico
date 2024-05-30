@@ -1,6 +1,6 @@
 package com.raerossi.retotecnico.domain.usecases
 
-import com.raerossi.retotecnico.data.LoginResult
+import com.raerossi.retotecnico.data.remote.auth.response.LoginResult
 import com.raerossi.retotecnico.data.repositories.LoginRepository
 import javax.inject.Inject
 

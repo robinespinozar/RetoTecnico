@@ -1,11 +1,10 @@
 package com.raerossi.retotecnico.ui.features.login
 
-import android.util.Patterns
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.raerossi.retotecnico.data.LoginResult
+import com.raerossi.retotecnico.data.remote.auth.response.LoginResult
 import com.raerossi.retotecnico.domain.usecases.LoginUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

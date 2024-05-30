@@ -1,7 +1,7 @@
 package com.raerossi.retotecnico.data.repositories
 
-import com.raerossi.retotecnico.data.LoginResult
-import com.raerossi.retotecnico.data.remote.AuthService
+import com.raerossi.retotecnico.data.remote.auth.response.LoginResult
+import com.raerossi.retotecnico.data.remote.auth.AuthService
 import javax.inject.Inject
 
 class LoginRepository @Inject constructor(

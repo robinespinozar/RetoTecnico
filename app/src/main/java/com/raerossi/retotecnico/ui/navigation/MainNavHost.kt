@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.raerossi.retotecnico.ui.features.home.HomeScreen
 import com.raerossi.retotecnico.ui.features.login.LoginScreen
 
 @Composable
@@ -18,12 +19,12 @@ fun MainNavHost(navController: NavHostController = rememberNavController()) {
             LoginScreen(
                 onLoginClick = {
                     navController.popBackStack()
-                    navController.navigate(Screen.MoviesListScreen.route)
+                    navController.navigate(Screen.HomeScreen.route)
                 }
             )
         }
-        composable(route = Screen.MoviesListScreen.route){
-
+        composable(route = Screen.HomeScreen.route){
+            HomeScreen()
         }
     }
 }

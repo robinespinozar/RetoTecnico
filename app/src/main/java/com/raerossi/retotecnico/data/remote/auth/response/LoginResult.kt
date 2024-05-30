@@ -1,4 +1,4 @@
-package com.raerossi.retotecnico.data
+package com.raerossi.retotecnico.data.remote.auth.response
 
 sealed class LoginResult {
     object Error : LoginResult()

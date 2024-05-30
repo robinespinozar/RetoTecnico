@@ -1,6 +1,6 @@
-package com.raerossi.retotecnico.data.remote
+package com.raerossi.retotecnico.data.remote.auth
 
-import com.raerossi.retotecnico.data.LoginResult
+import com.raerossi.retotecnico.data.remote.auth.response.LoginResult
 import javax.inject.Inject
 
 //Esta clase simulará la autenticación de un usuario (Firebase Auth, Api Rest, etc ..)

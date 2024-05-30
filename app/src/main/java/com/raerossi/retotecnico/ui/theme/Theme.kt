@@ -38,6 +38,8 @@ val ColorScheme.errorColor: Color @Composable get() = md_theme_error_color
 val ColorScheme.primary: Color @Composable get() = md_primary
 val ColorScheme.backgroundGradient: Brush @Composable get() = md_background_gradient
 val ColorScheme.primaryGradient: Brush @Composable get() = md_primary_gradient
+val ColorScheme.bottomSheetContainer: Brush @Composable get() = md_bottomsheet_gradient
+val ColorScheme.onBottomSheetContainer: Color @Composable get() = md_theme_ref_neutral95
 
 @Composable
 fun RetoTecnicoTheme(

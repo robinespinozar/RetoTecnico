@@ -37,3 +37,11 @@ val md_primary_gradient = Brush.horizontalGradient(
         Color(0xFF6DCFAB)
     )
 )
+
+val md_bottomsheet_gradient = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFF120D0D),
+        Color(0xFF2B292B),
+        Color(0xFF120D0D)
+    )
+)
