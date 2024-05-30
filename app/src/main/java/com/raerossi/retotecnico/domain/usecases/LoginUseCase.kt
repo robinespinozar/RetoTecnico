@@ -1,7 +1,7 @@
 package com.raerossi.retotecnico.domain.usecases
 
 import com.raerossi.retotecnico.data.remote.auth.response.LoginResult
-import com.raerossi.retotecnico.data.repositories.LoginRepository
+import com.raerossi.retotecnico.data.LoginRepository
 import javax.inject.Inject
 
 class LoginUseCase @Inject constructor(

@@ -2,6 +2,7 @@ package com.raerossi.retotecnico.data.mappers
 
 import com.raerossi.retotecnico.data.local.entities.MovieEntity
 import com.raerossi.retotecnico.data.remote.movie.model.MovieModel
+import com.raerossi.retotecnico.data.remote.movie.response.MovieResponse
 import com.raerossi.retotecnico.domain.model.Movie
 
 fun MovieModel.toDomain() = Movie(

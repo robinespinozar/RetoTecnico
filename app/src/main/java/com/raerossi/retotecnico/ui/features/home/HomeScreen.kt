@@ -36,8 +36,8 @@ fun HomeScreen(
 ) {
     SetSystemColors(colorStatusBar = Color(0xFF2B292B))
 
-    val movies = viewModel.moviePagingFlow.collectAsLazyPagingItems()
-    HomeContent(movieList = movies)
+    val moviesList: LazyPagingItems<Movie> = viewModel.moviesState.collectAsLazyPagingItems()
+    HomeContent(movieList = moviesList)
 }
 
 @Composable

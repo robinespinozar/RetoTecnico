@@ -1,4 +1,4 @@
-package com.raerossi.retotecnico.data.repositories
+package com.raerossi.retotecnico.data
 
 import com.raerossi.retotecnico.data.remote.auth.response.LoginResult
 import com.raerossi.retotecnico.data.remote.auth.AuthService
