@@ -2,6 +2,8 @@ package com.raerossi.retotecnico.data.local.dao
 
 import androidx.paging.PagingSource
 import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Upsert
 import com.raerossi.retotecnico.data.local.Tables
@@ -10,12 +12,12 @@ import com.raerossi.retotecnico.data.local.entities.MovieEntity
 @Dao
 interface MovieDao {
 
-    @Upsert
-    suspend fun upsertAll(movies: List<MovieEntity>)
+    @Query("Select * from " + Tables.MOVIE)
+    suspend fun getAllMovies(): List<MovieEntity>
 
-    @Query("SELECT * FROM " + Tables.MOVIE)
-    fun pagingSource(): PagingSource<Int, MovieEntity>
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAllMovies(listMovies: List<MovieEntity>)
 
-    @Query("DELETE FROM " + Tables.MOVIE)
-    suspend fun clearAll()
+    @Query("Delete from " + Tables.MOVIE)
+    suspend fun clearAllMovies()
 }

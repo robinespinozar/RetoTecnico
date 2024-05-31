@@ -5,5 +5,5 @@ object Constants {
     const val URL_IMAGE = "https://image.tmdb.org/t/p/w500/"
     const val PAGING_CONFIG = 20
     const val USER = "Admin"
-    const val PASSWORD = "Password.123"
+    const val PASSWORD = "Password*123"
 }
