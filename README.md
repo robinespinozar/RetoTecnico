@@ -1,4 +1,4 @@
-Reto Técnico
+Reto Técnico - 
 Robin Espinoza Rossi
 
 En esta App en donde se muestra listados de películas, podemos ver el uso de tecnologías como MVVM , ROOM y Clean Architecture
