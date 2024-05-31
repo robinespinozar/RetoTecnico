@@ -47,7 +47,7 @@ class LoginViewModel @Inject constructor(
             LoginResult.Error -> {
                 _uiState.update {
                     it.copy(
-                        messageError = "Check the user and/or password or try again.",
+                        messageError = "Check the information or try again.",
                         showErrorDialog = true
                     )
                 }
